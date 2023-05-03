@@ -7,108 +7,123 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./toss.css">
-
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./toss.js"></script>
     </head>
-    <!-- 전체 -->
-    <div class="wrap">
-        <!--메인 배경 이미지 -->
-        <div class="bg_img">
-            <img>
-        </div>
-        <!-- 헤더 -->
-        <div class="header">
-            <!-- 로고 -->
-            <div class="logo">
-                <img src="./toss_logo.svg" alt="">
-            </div>
-            <!-- -->
-            <ul>
-                <li>
-                    <a href="https://toss.im/team">회사 소개</a>
-                </li>
-                <li>
-                    <a href="https://support.toss.im/">고객센터</a>
-                </li>
-                <li>
-                    <a href="https://support.toss.im/faq">자주 묻는 질문</a>
-                </li>
-                <li>
-                    <a href="https://toss.im/tosscert">토스인증서</a>
-                </li>
-                <li>
-                    <a href="https://toss.im/career">채용</a>
-                </li>
-            </ul>
-            <!-- 언어 선택 -->
-            <div class="gnb_lng">
-                <div class="ko">KOR</div>｜
-                <div class="eg">ENG</div>
-            </div>
-        </div>
-        <!--메인 -->
-        <div class="main">
-            <!-- 메인 컨텐츠 -->
-            <div class="main_contents">
-                <!-- 메인 제목 -->
-                <div class="main_title">금융의 모든 것
-                    <br>토스에서 쉽고 간편하게
+    <body>
+        
+        <!-- 전체 -->
+        <div class="wrap">
+            <!--메인 배경 이미지 -->
+            <div class="bg_img">
+                <img
+                    class="bg_img1"
+                    src="https://static.toss.im/assets/homepage/newtossim/new_main.png">
+
+                <!-- 헤더 -->
+                <div class="header">
+                    <div class="header_row">
+                        <!-- 로고 -->
+                        <div class="logo">
+                            <img src="./toss_logo.svg" alt="">
+                        </div>
+                        <!-- -->
+                        <div class="row_row">
+                        <ul>
+                            <li>
+                                <a href="https://toss.im/team">회사 소개</a>
+                            </li>
+                            <li>
+                                <a href="https://support.toss.im/">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="https://support.toss.im/faq">자주 묻는 질문</a>
+                            </li>
+                            <li>
+                                <a href="https://toss.im/tosscert">토스인증서</a>
+                            </li>
+                            <li>
+                                <a href="https://toss.im/career">채용</a>
+                            </li>
+                        </ul>
+                        <!-- 언어 선택 -->
+                        <div class="gnb_lng">
+                            <div class="ko">KOR</div>｜
+                            <div class="eg">ENG</div>
+                        </div>
+                    </div>
                 </div>
-                <!-- 메인 버튼-->
-                <div class="main_button">
-                    <button class="app">
-                        <a href="https://apps.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328">
-                            <img src="https://static.toss.im/png-icons/timeline/applekorea.png">App Store
-                        </a>
-                    </button>
-                    <button class="google">
-                        <a
-                            href="https://play.google.com/store/apps/details?id=viva.republica.toss&pli=1">
-                            <img src="https://static.toss.im/png-icons/timeline/googleplay.png">
-                            Google Play</a>
-                    </button>
+                </div>
+
+                <!--메인 -->
+                <div class="main">
+                    <!-- 메인 컨텐츠 -->
+                    <div class="main_contents">
+                        <!-- 메인 제목 -->
+                        <div class="main_title">금융의 모든 것
+                            <br>토스에서 쉽고 간편하게
+                        </div>
+                    </div>
+                    <!-- 메인 버튼-->
+                    <div class="main_button">
+                        <button class="app">
+                            <a href="https://apps.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328">
+                                <img src="https://static.toss.im/png-icons/timeline/applekorea.png">App Store
+                            </a>
+                        </button>
+                        <button class="google">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=viva.republica.toss&pli=1">
+                                <img src="https://static.toss.im/png-icons/timeline/googleplay.png">
+                                Google Play</a>
+                        </button>
+                    </div>
+                    <div class="main_banner_arrow">
+                        <img class="move_icon" src="/arrow-down-sign-to-navigate.png">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="container_contents">내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.
                 <br>이제껏 경험 못 했던 쉽고 편리한 금융 서비스,
                 <br>토스와 함께라면 당신의 일상이 새로워질 거예요.
             </div>
-            <div class="middle_main">
-                <!-- 1 -->
-                <div class="left">
-                    <div class="middle_keyword">홈 · 소비</div>
-                    <div class="middle_kcontent">내 돈 관리,
-                        <br>지출부터 일정까지
-                        <br>똑똑하게</div>
-                </div>
-                <div class="phone_img">
-                    <div class="box1"></div>
-                    <div class="box2"></div>
-                </div>
-                <!-- <div class="phone1"> <img class="phone_case1"
-                src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png">
-                <img class="case_img"
-                src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png"> </div> <div
-                class="phone2"> <img
-                src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png">
-                <img src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png"> </div>
-                </div> -->
-                <div class="right">
-                    <div class="middle_sub">
-                        토스에 계좌와 카드를 연결해 보세요.<br>
-                        계좌 잔액, 대출·투자 내역은 기본,<br>
-                        일자별 소비와 수입까지 한 번에 볼 수 있어요.
+            <div class="container">
+                <div class="middle_main">
+                    <!-- 1 -->
+                    <div class="left">
+                        <div class="middle_keyword">홈 · 소비</div>
+                        <div class="middle_kcontent">내 돈 관리,
+                            <br>지출부터 일정까지
+                            <br>똑똑하게</div>
+                    </div>
+                    <div class="phone_img">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                    </div>
+                    <!-- <div class="phone1"> <img class="phone_case1"
+                    src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png">
+                    <img class="case_img"
+                    src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png"> </div> <div
+                    class="phone2"> <img
+                    src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png">
+                    <img src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png"> </div> -->
+                    <div class="right">
+                        <div class="middle_sub">
+                            토스에 계좌와 카드를 연결해 보세요.<br>
+                            계좌 잔액, 대출·투자 내역은 기본,<br>
+                            일자별 소비와 수입까지 한 번에 볼 수 있어요.
+                        </div>
                     </div>
                 </div>
                 <!-- 2 -->
+                <div class="bg_gray">
                 <div class="middle_main">
                     <div class="middle_keyword">송금</div>
                     <div class="middle_kcontent">간편하고 안전하게
                         <br>수수료는 평생 무료로,
                         <br>이런 송금 써보셨나요?</div>
-                </div>
 
+                
                 <div class="sub_title">
                     <div class="left">
                         <div class="sub_txt">
@@ -172,8 +187,11 @@
                             alt="">
                     </div>
                 </div>
-
+            </div>
+        </div>
                 <!-- 3 -->
+                <div class="middle_main">
+
                 <div class="sub_title">
                     <div class="left">
                         <div class="sub_txt">
@@ -202,7 +220,11 @@
                     src="https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png">
                     <img src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png"> </div> -->
                 </div>
+                </div>
                 <!-- 4 -->
+                <div class="bg_gray">
+
+                <div class="middle_main">
                 <div class="sub_title_none">
                     <div class="sub_title_txt">신용</div>
                     <div class="row_main_title">금융 생활의 첫 걸음,<br>
@@ -252,6 +274,10 @@
                             신용관리 팁 콘텐츠를 한번 읽어보세요.</div>
                     </div>
                 </div>
+</div>
+</div>
+
+<div class="middle_main">
 
                 <div class="sub_title_none">
                     <div class="sub_title_txt">투자</div>
@@ -271,19 +297,25 @@
                     <div class="iv_content3">별도 앱 설치 없이 토스에서 바로,<br>
                         토스증권으로 나만의 투자를 시작해 보세요.</div>
                 </div>
+            </div>
+
 
                 <div class="finance">
-                    <img
-                        src="https://static.toss.im/assets/homepage/newtossim/section2_4_big_mobile.png"
+                        <img
+                        src="https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg"
                         alt="">
                     <div class="finance_title">꼭 필요했던 금융</div>
                 </div>
 
+
+                <div class="middle_main">
                 <div class="sub_title_none">
                     <div class="row_main_title">토스로<br>
                         나에게 딱 맞게</div>
+                        <div class="toss_im1">
                     <img
-                        src="https://static.toss.im/assets/homepage/newtossim/section2_1_document.jpg">
+                    src="https://static.toss.im/assets/homepage/newtossim/section2_1_document.jpg">
+                   </div>
 
                     <div class="my_box">
                         <div class="my_box_contents">
@@ -322,9 +354,10 @@
                 </div>
 
                 <div class="car">
+                    <div class="toss_im2">
                     <img
-                        src="https://static.toss.im/assets/homepage/newtossim/section2_3_apt_01.jpg"
-                        alt="">
+                    src="https://static.toss.im/assets/homepage/newtossim/section2_3_apt_01.jpg"
+                    alt="">
                     <div class="car_">
                         <div class="car_contents1">
                             <span class="car_black">내 부동산 · 자동차</span>
@@ -339,27 +372,31 @@
                         </div>
                     </div>
                 </div>
+                </div>
+            </div>
+
                 <!-- 알면 좋은 금융 -->
-                <div>
-                    <div class="sub_title">
+                <div class="bg_gray">
+                <div class="middle_main">
+                    <div class="sub_title_none">
                         <div class="sub_title_txt">알면 좋은 금융</div>
                         <div class="title_black">이런 서비스도
                             <br>한번 써보세요</div>
                     </div>
-                </div>
-                <div class="icons">
-                    <div class="icons_row">
-                        <div class="icons_box">
-                            <div class="icons_img"></div>
-                            <div class="align_col">
-                                <div class="icons_title">브랜드 캐시백</div>
-                                <div class="icons_contents">좋아하는 브랜드를 더 사랑할 수 있도록,
-                                    <br>
-                                    매주 브랜드를 선택하고 결제 시 캐시백을
-                                    <br>
-                                    받아보세요.</div>
+              
+                    <div class="icons">
+                        <div class="icons_row">
+                            <div class="icons_box">
+                                <div class="icons_img"></div>
+                                <div class="align_col">
+                                    <div class="icons_title">브랜드 캐시백</div>
+                                    <div class="icons_contents">좋아하는 브랜드를 더 사랑할 수 있도록,
+                                        <br>
+                                        매주 브랜드를 선택하고 결제 시 캐시백을
+                                        <br>
+                                        받아보세요.</div>
+                                </div>
                             </div>
-                        </div>
                         <div class="icons_box">
                             <div class="icons_img"></div>
                             <div class="align_col">
@@ -411,135 +448,156 @@
                         </div>
                     </div>
                 </div>
-                <!-- 사업도 토스와 함께 -->
-                <div class="business">
-                    <img
-                        src="https://static.toss.im/assets/homepage/newtossim/section4_device.jpg"
-                        alt="">
-                    <div class="business_group">
-                        <div class="business_title">사업도 토스와 함께</div>
-                        <div class="business_sub">사업을 시작하셨나요?<br>
-                            사업의 시작부터 관리까지<br>
-                            이제 토스와 함께 하세요.</div>
+            </div>
+            </div>
+            <!-- 사업도 토스와 함께 -->
+            <div class="business">
+                <img
+                src="https://static.toss.im/assets/homepage/newtossim/section4_device.jpg"
+                alt="">
+                <div class="business_group">
+                    <div class="business_title">사업도 토스와 함께</div>
+                    <div class="business_sub">사업을 시작하셨나요?<br>
+                        사업의 시작부터 관리까지<br>
+                        이제 토스와 함께 하세요.</div>
+                </div>
+                <div class="tosspay">
+                    <div class="tosspay_group">
+                        <div class="tosspay_title">토스결제</div>
+                        <div class="tosspay_sub">합리적인 수수료,
+                            <br>
+                            간편한 결제 경험으로 비용은
+                            <br>
+                            절감하고 매출은 늘리세요.</div>
+                        <button>가맹점 문의하기</button>
                     </div>
-                    <div class="tosspay">
-                        <div class="tosspay_group">
-                            <div class="tosspay_title">토스결제</div>
-                            <div class="tosspay_sub">합리적인 수수료, <br>
-                                간편한 결제 경험으로 비용은 <br>
-                                절감하고 매출은 늘리세요.</div>
-                            <button>가맹점 문의하기</button>
-                        </div>
-                        <div class="tosspay_group">
-                            <div class="tosspay_title">내 매출 장부</div>
-                            <div class="tosspay_sub">내 매출 장부 따로 관리할 필요 없어요.<br>
-                            총 매출, 총 입금, 총 지출을 보기 쉽게 <br>
-                        알려드려요.</div>
-                            <button>자세히 알아보기</button>
-                        </div>
-                        <div class="tosspay_group">
-                            <div class="tosspay_title">토스페이먼츠</div>
-                            <div class="tosspay_sub">시작하기 어려웠던 온라인 비즈니스, <br>
-                                온라인 결제 토스페이먼츠와 <br>
-                                함께 해보세요.</div>
-                            <button>홈페이지 바로가기</button>
-                        </div>
+                    <div class="tosspay_group">
+                        <div class="tosspay_title">내 매출 장부</div>
+                        <div class="tosspay_sub">내 매출 장부 따로 관리할 필요 없어요.<br>
+                            총 매출, 총 입금, 총 지출을 보기 쉽게
+                            <br>
+                            알려드려요.</div>
+                        <button>자세히 알아보기</button>
+                    </div>
+                    <div class="tosspay_group">
+                        <div class="tosspay_title">토스페이-먼츠</div>
+                        <div class="tosspay_sub">시작하기 어려웠던 온라인 비즈니스,
+                            <br>
+                            온라인 결제 토스페이먼츠와
+                            <br>
+                            함께 해보세요.</div>
+                        <button>홈페이지 바로가기</button>
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="footer">
+                    <div class="under_bg">
+                        <div class="under_bg_group">
+                            <div class="under_bg_title">서비스</div>
+                            <div class="under_bg_sub">
+                                <div>공지사항</div>
+                                <div>자주 묻는 질문</div>
+                                <div>공동인증서 관리</div>
+                                <div>계정 일시잠금</div>
+                                <div>고객센터</div>
+                                <div>브랜드 리소스센터</div>
+                                <div>토스의 개인정보 보호</div>
+                            </div>
+                        </div>
+
+                        <div class="under_bg_group">
+                            <div class="under_bg_title">회사</div>
+                            <div class="under_bg_sub">
+                                <div>회사 소개</div>
+                                <div>토스페이먼츠</div>
+                                <div>토스인슈어런스</div>
+                                <div>토스증권</div>
+                                <div>토스씨엑스</div>
+                                <div>토스뱅크</div>
+                                <div>토스플레이스</div>
+                                <div>채용</div>
+                                <div>블로그</div>
+                                <div>공고</div>
+                            </div>
+                        </div>
+
+                        <div class="under_bg_group">
+                            <div class="under_bg_title">문의</div>
+                            <div class="under_bg_sub">
+                                <div>사업 제휴</div>
+                                <div>광고 문의</div>
+                                <div>인증 사업 문의</div>
+                                <div>마케팅·PR</div>
+                                <div>IR</div>
+                            </div>
+                        </div>
+
+                        <div class="under_bg_group">
+                            <div class="under_bg_title">고객센터</div>
+                            <div class="under_bg_sub">
+                                <div>전화: 1599-4905 (24시간 연중무휴)</div>
+                                <div>이메일(고객전용): support@toss.im</div>
+                                <div>이메일(외부기관전용): safe@toss.im</div>
+                                <div>민원 접수</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer2">
+                    <div class="company_name">㈜비바리퍼블리카</div>
+                    <div class="company_info">사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                        호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 사업자정보확인<br>
+                        06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                        고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)</div>
+
+                    <div class="company_btm_row">
+                        <div class="company_etc">
+                            <div class="company_etc_normal">서비스 이용약관</div>
+                            <div class="company_etc_bold">개인정보 처리방침</div>
+                            <div class="company_etc_normal">가맹점 고지사항</div>
+                        </div>
+
+                        <div class="company_etc">
+                            <div class="company_etc_normal">통합 금융정보 서비스 약관</div>
+                            <div class="company_etc_bold">채용팀 개인정보 처리방침</div>
+                            <div class="company_etc_normal">토스 전자서명인증업무준칙</div>
+                        </div>
+
+                        <div class="company_etc">
+                            <div class="company_etc_normal">마이데이터 서비스 이용약관</div>
+                            <div class="company_etc_normal">영상정보처리기기 운영 관리 방침</div>
+                            <div class="company_etc_normal">토스 전자인증서비스 약관</div>
+                        </div>
+
+                        <div class="company_etc">
+                            <div class="company_etc_normal">이용자의 권리 및 유의사항</div>
+                            <div class="company_etc_normal">위치기반서비스 이용약관</div>
+                            <div class="company_etc_normal">금융소비자보호</div>
+                        </div>
+                    </div>
+
+                    <div class="sns">
+                        <img
+                            class="facebook"
+                            src="https://static.toss.im/assets/homepage/safety/icn-facebook.svg">
+                        <img
+                            class="blog"
+                            src="https://static.toss.im/assets/homepage/safety/icn-blog.svg">
+                        <img
+                            class="naver"
+                            src="https://static.toss.im/assets/homepage/safety/icn-naver.svg">
+                        <img
+                            class="twitter"
+                            src="https://static.toss.im/assets/homepage/safety/icn-twitter.svg">
+                        <img
+                            class="instagram"
+                            src="https://static.toss.im/assets/homepage/safety/icn-instagram.svg">
+                    </div>
+                </div>
+            </footer>
         </div>
-        <footer>
-        <div class="footer">
-            <div class="under_bg">
-                <div class="under_bg_group">
-                    <div class="under_bg_title">서비스</div>
-                    <div class="under_bg_sub">
-                        <div>공지사항</div>
-                        <div>자주 묻는 질문</div>
-                        <div>공동인증서 관리</div>
-                        <div>계정 일시잠금</div>
-                        <div>고객센터</div>
-                        <div>브랜드 리소스센터</div>
-                        <div>토스의 개인정보 보호</div>
-                    </div>
-                </div>
 
-                <div class="under_bg_group">
-                    <div class="under_bg_title">회사</div>
-                    <div class="under_bg_sub">
-                        <div>회사 소개</div>
-                        <div>토스페이먼츠</div>
-                        <div>토스인슈어런스</div>
-                        <div>토스증권</div>
-                        <div>토스씨엑스</div>
-                        <div>토스뱅크</div>
-                        <div>토스플레이스</div>
-                        <div>채용</div>
-                        <div>블로그</div>
-                        <div>공고</div>
-                    </div>
-                </div>
-
-                <div class="under_bg_group">
-                    <div class="under_bg_title">문의</div>
-                    <div class="under_bg_sub">
-                        <div>사업 제휴</div>
-                        <div>광고 문의</div>
-                        <div>인증 사업 문의</div>
-                        <div>마케팅·PR</div>
-                        <div>IR</div>
-                    </div>
-                </div>
-
-                <div class="under_bg_group">
-                    <div class="under_bg_title">고객센터</div>
-                    <div class="under_bg_sub">
-                        <div>전화: 1599-4905 (24시간 연중무휴)</div>
-                        <div>이메일(고객전용): support@toss.im</div>
-                        <div>이메일(외부기관전용): safe@toss.im</div>
-                        <div>민원 접수</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer2">
-                <div class="">㈜비바리퍼블리카</div>
-                <div class="">사업자 등록번호 : 120-88-01280 | 대표 : 이승건 호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업
-                    신고번호 : 2014-서울강남-03377 사업자정보확인 06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스) 고객센터
-                    : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)</div>
-                <div class="">
-                    <div class="">서비스 이용약관</div>
-                    <div class="">개인정보 처리방침</div>
-                    <div class="">가맹점 고지사항</div>
-                </div>
-
-                <div class="">
-                    <div class="">통합 금융정보 서비스 약관</div>
-                    <div class="">채용팀 개인정보 처리방침</div>
-                    <div class="">토스 전자서명인증업무준칙</div>
-                </div>
-
-                <div class="">
-                    <div class="">마이데이터 서비스 이용약관</div>
-                    <div class="">영상정보처리기기 운영 관리 방침</div>
-                    <div class="">토스 전자인증서비스 약관</div>
-                </div>
-
-                <div class="">
-                    <div class="">이용자의 권리 및 유의사항</div>
-                    <div class="">위치기반서비스 이용약관</div>
-                    <div class="">금융소비자보호</div>
-                </div>
-            </div>
-            <div class="">
-                <i class="">페이스북</i>
-                <i class="">블로그</i>
-                <i class="">네이버</i>
-                <i class="">트위터</i>
-                <i class="">인스타그램</i>
-            </div>
-        </div>
-        </footer>
-    </div>
-</body>
+    </body>
 </html>

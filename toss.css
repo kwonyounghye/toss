@@ -32,7 +32,7 @@
 }
 
 .main_banner_arrow {
-    height: 535px;
+    height: 510px;
     overflow: hidden;
 }
 .move_icon{
@@ -88,7 +88,7 @@ body {
     white-space: nowrap
 }
 .header .header_row {
-    width: 1140px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,7 +222,7 @@ body {
 
 .middle_main {
     padding: 250px 0;
-    width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }
 .middle_main .middle_keyword {
@@ -282,7 +282,7 @@ body {
     font-weight: var(--font-weight-medium);
     display: flex;
     justify-content: right;
-    padding-right: 50px;
+    padding-right: 10px;
     line-height: 30px;
 }
 
@@ -333,15 +333,14 @@ body {
     line-height: 30px;
 }
 .middle_main .sub_title {
-    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .sub_title .right img {
     width: 500px;
-    left: 500px;
-    margin-left: 200px;
+    /* left: 500px; */
+    /* padding-right: 100%; */
 
 }
 /* 스크롤 이벤트 */
@@ -579,7 +578,7 @@ body {
     margin-bottom: 100px;
 }
 .car .toss_im2 img {
-    width: 1140px;
+    width: 100%;
 }
 
 .car .car_ .car_contents1 {
@@ -732,7 +731,7 @@ footer {
 
 .footer .under_bg {
     display: flex;
-    width: 1064px;
+    width: 100%;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -762,7 +761,7 @@ footer {
 .footer2 {
     position: relative;
     margin: auto;
-    width: 1064px;
+    width: 100%;
 }
 
 .footer2 .company_name {

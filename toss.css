@@ -219,6 +219,8 @@ body {
 }
 .container {
     width: 100%;
+    box-sizing: border-box;
+    /* 여기에 padding이 아니라 자식에 margin을 넣기(이미지, 배경 등 문제) */
 }
 
 .container .phone_img {
@@ -255,9 +257,9 @@ body {
 }
 
 .middle_main {
-    padding: 250px 0;
+    /* padding: 250px 0; */
     width: 100%;
-    margin: 0 auto;
+    margin: 7%;
 }
 .middle_main .middle_keyword {
     color: var(--color-blue);
@@ -478,6 +480,7 @@ body {
     display: flex;
     margin-bottom: 100px;
     background-size: cover;
+    box-sizing: border-box;
 }
 .finance .finance_title {
     color: var(--color-white);
@@ -505,7 +508,7 @@ body {
 .sub_title_none .toss_im1 img {
     width: 740px;
     /* opacity: 1; */
-
+    margin: 7%;
 }
 
 /* 내 문서함 공공문서~ */

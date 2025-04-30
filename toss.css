@@ -269,11 +269,13 @@ body {
     letter-spacing: -1px;
 
 }
-
+/* .middle_kcontent {
+} */
 .middle_main .middle_kcontent {
     color: var(--color-black);
     font-size: var(--font-size50);
     font-weight: var(--font-weight-medium);
+    display: inline-block;
     color: var(--color-light-black);
     margin-top: 30px;
     letter-spacing: -2px;
@@ -308,6 +310,10 @@ body {
     letter-spacing: -2px;
 
 }
+.left {
+    padding: 7%;
+    display: inline-block;
+}
 .sub_title .left .row_main_title {
     font-size: var(--font-size40);
     color: var(--color-dark-baclk);
@@ -338,6 +344,10 @@ body {
     margin-top: 10px;
     letter-spacing: -1px;
     line-height: 30px;
+}
+.middle_main {
+    padding: 7%;
+    box-sizing: border-box;
 }
 .middle_main .sub_title {
     flex-direction: row;
@@ -395,8 +405,8 @@ body {
     background-color: var(--color-blue);
     position: relative;
     bottom: 200px;
-    left: 200px;
-
+    left: 50px;
+    box-sizing: border-box;
 }
 
 /* 크레딧 */

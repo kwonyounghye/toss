@@ -779,8 +779,8 @@ footer {
 /* footer2 */
 .footer2 {
     position: relative;
-    margin: auto;
     width: 100%;
+    padding: 7%;
 }
 
 .footer2 .company_name {

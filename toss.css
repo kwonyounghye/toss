@@ -31,10 +31,7 @@
     --font-weight-bold: 700;
 }
 
-.main_banner_arrow {
-    height: 510px;
-    overflow: hidden;
-}
+
 .move_icon{
     position: relative;
     top: 0;
@@ -196,14 +193,18 @@ body {
     display: flex;
     align-items: center;
 }
-
+.main_banner_arrow {
+    height: 400px;
+    overflow: hidden;
+}
 .main .main_banner_arrow img {
     font-size: 10px;
     width: 48px;
     position: relative;
-    top: 480px;
+    top: 300px;
     left: 50%;
-
+    display: block;
+    filter: contrast(0%);
 }
 
 /* container */

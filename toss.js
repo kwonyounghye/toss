@@ -15,7 +15,7 @@ $(document).ready(function() {
     function moveImage() {
       $(".move_icon").animate({ top: "+=20" }, 900, function() {
         // 애니메이션이 완료되면 이미지 위치를 다시 초기화합니다.
-        $(this).css("top", "450px");
+        $(this).css("top", "300px");
         // 이미지를 다시 이동합니다.
         moveImage();
       });

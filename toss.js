@@ -42,3 +42,15 @@ $(document).ready(function() {
       });
     });
   });
+
+
+
+  window.addEventListener('scroll', function () {
+    const image = document.querySelector('.finance_img');
+    const rect = image.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+    if (isVisible) {
+      image.classList.add('revealed');
+    }
+  });

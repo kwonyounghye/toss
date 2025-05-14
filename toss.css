@@ -488,25 +488,28 @@ body {
 }
 
 /* 금융 */
-
 .finance {
     position: relative;
     overflow: hidden;
-    align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
-.finance img {
+.finance_img {
     height: 800px;
-    width: 30vw;
+    width: 30%;
     display: flex;
-    margin-bottom: 100px;
-    background-size: cover;
-    box-sizing: border-box;
-    transition: all 1.2s ease-out;
+    /* margin-bottom: 100px; */
+    margin: 50px auto;
+    transition: 
+    width 1.2s ease-out infinite linear, 
+    opacity 1.2s ease-out infinite linear;
 }
-.finance .finance_title {
+.finance_img.revealed {
+    width: 100%;
+    opacity: 1;
+}
+    .finance .finance_title {
     color: var(--color-white);
     font-size: var(--font-size100);
     position: absolute;

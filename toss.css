@@ -497,12 +497,13 @@ body {
 
 .finance_img {
     height: 800px;
-    width: 30%;
-    display: flex;
+    width: 30vw;
+    /* display: flex; */
+    display: block;
     /* margin-bottom: 100px; */
     margin: 50px auto;
     transition: 
-    width 1.2s ease-out infinite linear, 
+    width 1.2s ease-out linear, 
     opacity 1.2s ease-out infinite linear;
 }
 .finance_img.revealed {

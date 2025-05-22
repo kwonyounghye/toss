@@ -515,7 +515,8 @@ body {
     font-size: var(--font-size100);
     position: absolute;
     top: 40%;
-    right: 30%;
+    right: 20%;
+    display: block;
     font-weight: var(--font-weight-bold);
     border: 1px solid red;
 }

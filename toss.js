@@ -43,29 +43,21 @@ $(document).ready(function() {
     });
   });
 
-
-
-  // window.addEventListener('scroll', function () {
-  //   const image = document.querySelector('.finance_img');
-  //   const rect = image.getBoundingClientRect();
-  //   const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-
-  //   if (isVisible) {
-  //     image.classList.add('revealed');
-  //   }
-  // });
-
-  const image = document.querySelector('.finance_img');
-  const section = document.querySelector('.finance');
-
+  
   window.addEventListener('scroll', () => {
-    const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+      const image = document.querySelector('.finance_img');
+      const text = document.querySelector('.finance_title');
+        const section = document.querySelector('.finance');
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-    if (rect.top < windowHeight && rect.bottom > 0) {
-      const ratio = 1 - rect.top / windowHeight;
-      const clampedRatio = Math.min(Math.max(ratio, 0), 1);
-      const width = 30 + clampedRatio * 70; // 30% → 100%
-      image.style.width = `${width}%`;
-    }
-  });
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const ratio = 1 - rect.top / windowHeight;
+        const clampedRatio = Math.min(Math.max(ratio, 0), 1);
+        const width = 70 + clampedRatio * 30;
+        const fontSize = 400 + clampedRatio * 300;
+        image.style.width = `${width}%`;
+        text.style.fontSize = `${fontSize}%`;
+      }
+    });
+

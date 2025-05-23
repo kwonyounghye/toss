@@ -502,10 +502,9 @@ body {
     display: block;
     /* margin-bottom: 100px; */
     margin: 50px auto;
-    transition: 
-    width 1.2s ease-out linear, 
-    opacity 1.2s ease-out infinite linear;
+
     object-fit: cover;
+    transition: all 0.1s ease-out;
 }
 .finance_img.revealed {
     width: 100%;
@@ -518,7 +517,7 @@ body {
     top: 40%;
     right: 25%;
     font-weight: var(--font-weight-bold);
-
+    transition: all 0.1s ease-out;
 }
 
 /* 토스로 나에게 딱 맞게*/
@@ -527,14 +526,14 @@ body {
     flex-direction: column;
 }
 
-.sub_title_none .toss_im1 {
+.sub_title_none .toss_img1 {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 
 }
 
-.sub_title_none .toss_im1 img {
+.sub_title_none .toss_img1 img {
     width: 740px;
     /* opacity: 1; */
     margin: 7%;
@@ -610,7 +609,7 @@ body {
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.car .toss_im2 img {
+.car .toss_img2 img {
     width: 100%;
 }
 

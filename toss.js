@@ -55,9 +55,9 @@ $(document).ready(function() {
         const ratio = 1 - rect.top / windowHeight;
         const clampedRatio = Math.min(Math.max(ratio, 0), 1);
         const width = 70 + clampedRatio * 30;
-        const fontSize = 400 + clampedRatio * 300;
+        const scale = 70 + clampedRatio * 50;
         image.style.width = `${width}%`;
-        text.style.fontSize = `${fontSize}%`;
+        text.style.scale = `${scale}%`;
       }
     });
 

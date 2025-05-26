@@ -530,7 +530,8 @@ body {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-
+    opacity: 0;
+    transition: opacity 5s ease-in;
 }
 
 .sub_title_none .toss_img1 img {
@@ -538,7 +539,9 @@ body {
     /* opacity: 1; */
     margin: 7%;
 }
-
+.toss_img1.visible {
+    opacity: 1;
+  }
 /* 내 문서함 공공문서~ */
 .my_box .my_box_contents {
     font-size: var(--font-size40);

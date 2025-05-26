@@ -26,22 +26,22 @@ $(document).ready(function() {
   
 
 
-
-  $(document).ready(function() {
-    $('.middle_main').addClass('hidden');
-    $(window).on('scroll', function() {
-      $('.middle_main').each(function() {
-        var position = $(this).offset().top;
-        var windowHeight = $(window).height();
-        var windowTop = $(window).scrollTop();
-        if (position < windowTop + windowHeight - 100) {
-          $(this).removeClass('hidden').addClass('animate');
-        } else {
-          $(this).removeClass('animate').addClass('hidden');
-        }
-      });
-    });
-  });
+// 실행은 되는데 왜 있는지 모르겠음
+  // $(document).ready(function() {
+  //   $('.middle_main').addClass('hidden');
+  //   $(window).on('scroll', function() {
+  //     $('.middle_main').each(function() {
+  //       var position = $(this).offset().top;
+  //       var windowHeight = $(window).height();
+  //       var windowTop = $(window).scrollTop();
+  //       if (position < windowTop + windowHeight - 100) {
+  //         $(this).removeClass('hidden').addClass('animate');
+  //       } else {
+  //         $(this).removeClass('animate').addClass('hidden');
+  //       }
+  //     });
+  //   });
+  // });
 
   
   window.addEventListener('scroll', () => {
@@ -61,3 +61,19 @@ $(document).ready(function() {
       }
     });
 
+    document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // fade-out도 하고 싶으면 유지
+        }
+      });
+    }, {
+      threshold: 0.3, // 30% 보이면 실행
+    });
+    
+    const tossImg = document.querySelector('.toss_img1');
+    observer.observe(tossImg);
+  });

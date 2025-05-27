@@ -223,41 +223,61 @@ body {
 }
 .container {
     width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* 여기에 padding이 아니라 자식에 margin을 넣기(이미지, 배경 등 문제) */
 }
 
 .container .phone_img {
-    display: flex;
-    justify-content: space-between;
+    height: 100vh;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
-.container .phone_img .box1 {
-    width: 560px;
-    height: 936px;
-    background-color: var(--color-blue);
-    position: relative;
-    top: -200px;
-    left: 700px;
+.container .phone_img .phone1 {
+    /* width: 560px;
+    height: 936px; */
+    position: absolute;
+    /* top: -700px; */
+    /* left: 700px; */
+    top: 120vh;
+    right: -65vw;
+    height: 100vh;
+    scale: .4;
     
 }
-
-.container .phone_img .box2 {
-    width: 560px;
-    height: 936px;
-    background-color: var(--color-deep-gray);
+.phone_case1 {
     position: relative;
-    top: 100px;
-    right: 600px;
+    top: -2345px;
+    left: -160px;
+}
+.container .phone_img .phone2 {
+    /* width: 560px;
+    height: 936px; */
+    position: absolute;
+    top: -120vh;
+    right: 65vw;
+    /* bottom: 350px;
+    right: 600px; */
+    height: 100vh;
+    scale: .4;
+}
+.phone_screen1, .phone_screen2 {
+    scale: .72;
 }
 
+.phone_case2 {
+    position: relative;
+    bottom: 2345px;
+    right: 160px;    
+
+}
 .container .middle_sub {
     font-size: var(--font-size20);
     color: var(--color-gray);
     font-weight: var(--font-weight-medium);
-    /* position: relative;
-    bottom: 0;
-    left: 700px; */
+    position: relative;
+    /* top: 500px;
+    left: -100px; */
 }
 
 .middle_main {
@@ -531,7 +551,7 @@ body {
     display: flex;
     justify-content: center;
     opacity: 0;
-    transition: opacity 5s ease-in;
+    transition: opacity 4s ease-in;
 }
 
 .sub_title_none .toss_img1 img {
@@ -578,6 +598,8 @@ body {
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+  transform: translateY(250px);
 }
 
 .insurance .insurance_contents1 .in_sub_txt {
@@ -796,7 +818,7 @@ footer {
 .footer2 {
     position: relative;
     width: 100%;
-    padding: 7%;
+    padding: 10%;
 }
 
 .footer2 .company_name {

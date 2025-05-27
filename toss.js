@@ -77,3 +77,18 @@ $(document).ready(function() {
     const tossImg = document.querySelector('.toss_img1');
     observer.observe(tossImg);
   });
+
+  window.addEventListener('scroll', () => {
+    const target = document.querySelector('.insurance_contents1');
+    const rect = target.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+  
+    // 요소가 화면에 들어오면
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      const ratio = 1 - rect.top / windowHeight;
+      const clampedRatio = Math.min(Math.max(ratio, 0), 1);
+  
+      target.style.opacity = clampedRatio;
+      target.style.transform = `translateY(${250 * (1 - clampedRatio)}px)`;
+    }
+  });

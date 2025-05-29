@@ -227,22 +227,17 @@ body {
     /* 여기에 padding이 아니라 자식에 margin을 넣기(이미지, 배경 등 문제) */
 }
 
-.container .phone_img {
-    height: 100vh;
-    /* display: flex;
-    justify-content: space-between; */
-}
 
-.container .phone_img .phone1 {
+.middle_main .phone1 {
     /* width: 560px;
     height: 936px; */
     position: absolute;
-    /* top: -700px; */
-    /* left: 700px; */
-    top: 120vh;
-    right: -65vw;
-    height: 100vh;
-    scale: .4;
+    top: -50vh;
+    left: 30vw;
+    height: 200vh;
+    scale: .45;
+    /* position: relative;
+    top: -100vh; */
     
 }
 .phone_case1 {
@@ -250,16 +245,15 @@ body {
     top: -2345px;
     left: -160px;
 }
-.container .phone_img .phone2 {
+.middle_main .phone2 {
     /* width: 560px;
     height: 936px; */
     position: absolute;
-    top: -120vh;
-    right: 65vw;
-    /* bottom: 350px;
-    right: 600px; */
-    height: 100vh;
-    scale: .4;
+    bottom: 0vh;
+    right: 20vw;
+    height: 200vh;
+    scale: .45;
+
 }
 .phone_screen1, .phone_screen2 {
     scale: .72;
@@ -276,13 +270,14 @@ body {
     color: var(--color-gray);
     font-weight: var(--font-weight-medium);
     position: relative;
-    /* top: 500px;
-    left: -100px; */
+    top: 140vh;
+    /* left: -100px; */
 }
 
 .middle_main {
     /* padding: 250px 0; */
     width: 100%;
+    position: relative;
     /* 자식에 padding 넣기 */
     /* margin: 7%; */
 }
@@ -372,6 +367,7 @@ body {
 .middle_main {
     padding: 7%;
     box-sizing: border-box;
+    
 }
 .middle_main .sub_title {
     flex-direction: row;
@@ -423,16 +419,25 @@ body {
     color: var(--color-deep-gray);
 }
 
-.container .phone_img .box3 {
-    width: 560px;
-    height: 936px;
-    background-color: var(--color-blue);
-    position: relative;
-    bottom: 200px;
-    left: 50px;
-    box-sizing: border-box;
-}
+.middle_main .phone3 {
+    /* width: 560px;
+    height: 936px; */
+    position: absolute;
+    /* bottom: 120vh;
+    left: 50px; */
+    /* box-sizing: border-box; */
+    scale: .45;
 
+}
+.phone_screen3 {
+    scale: 1.2;
+}
+.phone_case3 {
+    position: absolute;
+    bottom: -46vh;
+    right: -26vw;
+
+}
 /* 크레딧 */
 .sub_title_none {
     margin-bottom: 80px;

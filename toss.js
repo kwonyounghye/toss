@@ -10,7 +10,8 @@
 //     });
 // });
 
-// JavaScript 코드
+
+// 움직이는 화살표
 $(document).ready(function() {
     function moveImage() {
       $(".move_icon").animate({ top: "+=20" }, 900, function() {
@@ -24,7 +25,15 @@ $(document).ready(function() {
     moveImage();
   });
   
+  // 
+  document.addEventListener('DOMContentLoaded', () => {
 
+    const parent = document.querySelector('.middle_main');
+    const child = document.querySelector('.phone2');
+    
+    parent.style.height = `${child.offsetHeight}px`;
+    console.log(child.offsetHeight);
+  });
 
 // 실행은 되는데 왜 있는지 모르겠음
   // $(document).ready(function() {
